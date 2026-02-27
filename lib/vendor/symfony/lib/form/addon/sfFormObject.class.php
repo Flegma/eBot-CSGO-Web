@@ -278,6 +278,6 @@ abstract class sfFormObject extends BaseForm
 
   protected function camelize($text)
   {
-    return preg_replace(array('#/(.?)#e', '/(^|_|-)+(.)/e'), array("'::'.strtoupper('\\1')", "strtoupper('\\2')"), $text);
+    return preg_replace_callback_array(['#/(.?)#' => function($m) { return '::'  .strtoupper($m[1]); }, '/(^|_|-)+(.)/' => function($m) { return strtoupper($m[2]); }], $text);
   }
 }
