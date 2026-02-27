@@ -1,3 +1,4 @@
 config/app_user.yml
 config/databases.yml
 .installed
+cache/
