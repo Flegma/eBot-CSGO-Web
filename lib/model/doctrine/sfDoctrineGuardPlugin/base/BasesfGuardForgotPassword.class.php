@@ -10,14 +10,14 @@
  * @property timestamp $expires_at
  * @property sfGuardUser $User
  * 
- * @method integer               getUserId()     Returns the current record's "user_id" value
- * @method string                getUniqueKey()  Returns the current record's "unique_key" value
- * @method timestamp             getExpiresAt()  Returns the current record's "expires_at" value
- * @method sfGuardUser           getUser()       Returns the current record's "User" value
- * @method sfGuardForgotPassword setUserId()     Sets the current record's "user_id" value
- * @method sfGuardForgotPassword setUniqueKey()  Sets the current record's "unique_key" value
- * @method sfGuardForgotPassword setExpiresAt()  Sets the current record's "expires_at" value
- * @method sfGuardForgotPassword setUser()       Sets the current record's "User" value
+ * @method integer               get()           Returns the current record's "user_id" value
+ * @method string                get()           Returns the current record's "unique_key" value
+ * @method timestamp             get()           Returns the current record's "expires_at" value
+ * @method sfGuardUser           get()           Returns the current record's "User" value
+ * @method sfGuardForgotPassword set()           Sets the current record's "user_id" value
+ * @method sfGuardForgotPassword set()           Sets the current record's "unique_key" value
+ * @method sfGuardForgotPassword set()           Sets the current record's "expires_at" value
+ * @method sfGuardForgotPassword set()           Sets the current record's "User" value
  * 
  * @package    PhpProject1
  * @subpackage model

@@ -42,6 +42,19 @@ class teamsActions extends sfActions {
                     $teamsInSeasons->save();
                 }
 
+                $players = $request->getPostParameter('players');
+                if (is_array($players)) {
+                    foreach ($players as $playerData) {
+                        if (!empty($playerData['steamid64']) && !empty($playerData['name'])) {
+                            $teamPlayer = new TeamPlayers();
+                            $teamPlayer->setTeamId($team->getId());
+                            $teamPlayer->setSteamid64($playerData['steamid64']);
+                            $teamPlayer->setName($playerData['name']);
+                            $teamPlayer->save();
+                        }
+                    }
+                }
+
                 $this->getUser()->setFlash("notification_ok", $this->__("Team created successfully."));
                 $this->redirect("teams_create");
             } else {
@@ -56,6 +69,7 @@ class teamsActions extends sfActions {
         $this->form = new TeamsForm($this->team);
         $this->seasons = SeasonsTable::getInstance()->findAll();
         $this->currentSeasons = TeamsInSeasonsTable::getInstance()->createQuery('s')->select('s.season_id')->where('s.team_id = ?', $this->team->getId())->fetchArray();
+        $this->currentPlayers = TeamPlayersTable::getInstance()->createQuery('p')->select('p.steamid64, p.name')->where('p.team_id = ?', $this->team->getId())->fetchArray();
 
         if ($request->getMethod() == sfWebRequest::POST) {
             $this->form->bind($request->getPostParameter($this->form->getName()));
@@ -70,6 +84,20 @@ class teamsActions extends sfActions {
                     $teamsInSeasons->setSeasonId($season);
                     $teamsInSeasons->setTeams($this->team);
                     $teamsInSeasons->save();
+                }
+
+                TeamPlayersTable::getInstance()->createQuery('p')->delete()->where('p.team_id = ?', $this->team->getId())->execute();
+                $players = $request->getPostParameter('players');
+                if (is_array($players)) {
+                    foreach ($players as $playerData) {
+                        if (!empty($playerData['steamid64']) && !empty($playerData['name'])) {
+                            $teamPlayer = new TeamPlayers();
+                            $teamPlayer->setTeamId($this->team->getId());
+                            $teamPlayer->setSteamid64($playerData['steamid64']);
+                            $teamPlayer->setName($playerData['name']);
+                            $teamPlayer->save();
+                        }
+                    }
                 }
 
                 $this->getUser()->setFlash("notification_ok", $this->__("Team edited successfully."));

@@ -14,22 +14,22 @@
  * @property integer $score2_side2
  * @property Maps $Map
  * 
- * @method integer   getId()           Returns the current record's "id" value
- * @method integer   getMapId()        Returns the current record's "map_id" value
- * @method enum      getTypeScore()    Returns the current record's "type_score" value
- * @method integer   getScore1Side1()  Returns the current record's "score1_side1" value
- * @method integer   getScore1Side2()  Returns the current record's "score1_side2" value
- * @method integer   getScore2Side1()  Returns the current record's "score2_side1" value
- * @method integer   getScore2Side2()  Returns the current record's "score2_side2" value
- * @method Maps      getMap()          Returns the current record's "Map" value
- * @method MapsScore setId()           Sets the current record's "id" value
- * @method MapsScore setMapId()        Sets the current record's "map_id" value
- * @method MapsScore setTypeScore()    Sets the current record's "type_score" value
- * @method MapsScore setScore1Side1()  Sets the current record's "score1_side1" value
- * @method MapsScore setScore1Side2()  Sets the current record's "score1_side2" value
- * @method MapsScore setScore2Side1()  Sets the current record's "score2_side1" value
- * @method MapsScore setScore2Side2()  Sets the current record's "score2_side2" value
- * @method MapsScore setMap()          Sets the current record's "Map" value
+ * @method integer   get()             Returns the current record's "id" value
+ * @method integer   get()             Returns the current record's "map_id" value
+ * @method enum      get()             Returns the current record's "type_score" value
+ * @method integer   get()             Returns the current record's "score1_side1" value
+ * @method integer   get()             Returns the current record's "score1_side2" value
+ * @method integer   get()             Returns the current record's "score2_side1" value
+ * @method integer   get()             Returns the current record's "score2_side2" value
+ * @method Maps      get()             Returns the current record's "Map" value
+ * @method MapsScore set()             Sets the current record's "id" value
+ * @method MapsScore set()             Sets the current record's "map_id" value
+ * @method MapsScore set()             Sets the current record's "type_score" value
+ * @method MapsScore set()             Sets the current record's "score1_side1" value
+ * @method MapsScore set()             Sets the current record's "score1_side2" value
+ * @method MapsScore set()             Sets the current record's "score2_side1" value
+ * @method MapsScore set()             Sets the current record's "score2_side2" value
+ * @method MapsScore set()             Sets the current record's "Map" value
  * 
  * @package    PhpProject1
  * @subpackage model

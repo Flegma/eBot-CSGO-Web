@@ -12,18 +12,18 @@
  * @property varchar $tv_ip
  * @property Doctrine_Collection $Matchs
  * 
- * @method integer             getId()       Returns the current record's "id" value
- * @method varchar             getIp()       Returns the current record's "ip" value
- * @method varchar             getRcon()     Returns the current record's "rcon" value
- * @method varchar             getHostname() Returns the current record's "hostname" value
- * @method varchar             getTvIp()     Returns the current record's "tv_ip" value
- * @method Doctrine_Collection getMatchs()   Returns the current record's "Matchs" collection
- * @method Servers             setId()       Sets the current record's "id" value
- * @method Servers             setIp()       Sets the current record's "ip" value
- * @method Servers             setRcon()     Sets the current record's "rcon" value
- * @method Servers             setHostname() Sets the current record's "hostname" value
- * @method Servers             setTvIp()     Sets the current record's "tv_ip" value
- * @method Servers             setMatchs()   Sets the current record's "Matchs" collection
+ * @method integer             get()         Returns the current record's "id" value
+ * @method varchar             get()         Returns the current record's "ip" value
+ * @method varchar             get()         Returns the current record's "rcon" value
+ * @method varchar             get()         Returns the current record's "hostname" value
+ * @method varchar             get()         Returns the current record's "tv_ip" value
+ * @method Doctrine_Collection get()         Returns the current record's "Matchs" collection
+ * @method Servers             set()         Sets the current record's "id" value
+ * @method Servers             set()         Sets the current record's "ip" value
+ * @method Servers             set()         Sets the current record's "rcon" value
+ * @method Servers             set()         Sets the current record's "hostname" value
+ * @method Servers             set()         Sets the current record's "tv_ip" value
+ * @method Servers             set()         Sets the current record's "Matchs" collection
  * 
  * @package    PhpProject1
  * @subpackage model

@@ -11,16 +11,16 @@
  * @property boolean $active
  * @property Seasons $Season
  * 
- * @method integer     getId()        Returns the current record's "id" value
- * @method integer     getSeasonId()  Returns the current record's "season_id" value
- * @method varchar     getMessage()   Returns the current record's "message" value
- * @method boolean     getActive()    Returns the current record's "active" value
- * @method Seasons     getSeason()    Returns the current record's "Season" value
- * @method Advertising setId()        Sets the current record's "id" value
- * @method Advertising setSeasonId()  Sets the current record's "season_id" value
- * @method Advertising setMessage()   Sets the current record's "message" value
- * @method Advertising setActive()    Sets the current record's "active" value
- * @method Advertising setSeason()    Sets the current record's "Season" value
+ * @method integer     get()          Returns the current record's "id" value
+ * @method integer     get()          Returns the current record's "season_id" value
+ * @method varchar     get()          Returns the current record's "message" value
+ * @method boolean     get()          Returns the current record's "active" value
+ * @method Seasons     get()          Returns the current record's "Season" value
+ * @method Advertising set()          Sets the current record's "id" value
+ * @method Advertising set()          Sets the current record's "season_id" value
+ * @method Advertising set()          Sets the current record's "message" value
+ * @method Advertising set()          Sets the current record's "active" value
+ * @method Advertising set()          Sets the current record's "Season" value
  * 
  * @package    PhpProject1
  * @subpackage model

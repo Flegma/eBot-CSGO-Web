@@ -11,16 +11,16 @@
  * @property Seasons $Seasons
  * @property Teams $Teams
  * 
- * @method integer        getId()        Returns the current record's "id" value
- * @method integer        getSeasonId()  Returns the current record's "season_id" value
- * @method integer        getTeamId()    Returns the current record's "team_id" value
- * @method Seasons        getSeasons()   Returns the current record's "Seasons" value
- * @method Teams          getTeams()     Returns the current record's "Teams" value
- * @method TeamsInSeasons setId()        Sets the current record's "id" value
- * @method TeamsInSeasons setSeasonId()  Sets the current record's "season_id" value
- * @method TeamsInSeasons setTeamId()    Sets the current record's "team_id" value
- * @method TeamsInSeasons setSeasons()   Sets the current record's "Seasons" value
- * @method TeamsInSeasons setTeams()     Sets the current record's "Teams" value
+ * @method integer        get()          Returns the current record's "id" value
+ * @method integer        get()          Returns the current record's "season_id" value
+ * @method integer        get()          Returns the current record's "team_id" value
+ * @method Seasons        get()          Returns the current record's "Seasons" value
+ * @method Teams          get()          Returns the current record's "Teams" value
+ * @method TeamsInSeasons set()          Sets the current record's "id" value
+ * @method TeamsInSeasons set()          Sets the current record's "season_id" value
+ * @method TeamsInSeasons set()          Sets the current record's "team_id" value
+ * @method TeamsInSeasons set()          Sets the current record's "Seasons" value
+ * @method TeamsInSeasons set()          Sets the current record's "Teams" value
  * 
  * @package    PhpProject1
  * @subpackage model

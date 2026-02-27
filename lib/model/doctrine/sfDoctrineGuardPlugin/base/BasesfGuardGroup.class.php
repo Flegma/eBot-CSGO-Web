@@ -12,18 +12,18 @@
  * @property Doctrine_Collection $sfGuardGroupPermission
  * @property Doctrine_Collection $sfGuardUserGroup
  * 
- * @method string              getName()                   Returns the current record's "name" value
- * @method string              getDescription()            Returns the current record's "description" value
- * @method Doctrine_Collection getUsers()                  Returns the current record's "Users" collection
- * @method Doctrine_Collection getPermissions()            Returns the current record's "Permissions" collection
- * @method Doctrine_Collection getSfGuardGroupPermission() Returns the current record's "sfGuardGroupPermission" collection
- * @method Doctrine_Collection getSfGuardUserGroup()       Returns the current record's "sfGuardUserGroup" collection
- * @method sfGuardGroup        setName()                   Sets the current record's "name" value
- * @method sfGuardGroup        setDescription()            Sets the current record's "description" value
- * @method sfGuardGroup        setUsers()                  Sets the current record's "Users" collection
- * @method sfGuardGroup        setPermissions()            Sets the current record's "Permissions" collection
- * @method sfGuardGroup        setSfGuardGroupPermission() Sets the current record's "sfGuardGroupPermission" collection
- * @method sfGuardGroup        setSfGuardUserGroup()       Sets the current record's "sfGuardUserGroup" collection
+ * @method string              get()                       Returns the current record's "name" value
+ * @method string              get()                       Returns the current record's "description" value
+ * @method Doctrine_Collection get()                       Returns the current record's "Users" collection
+ * @method Doctrine_Collection get()                       Returns the current record's "Permissions" collection
+ * @method Doctrine_Collection get()                       Returns the current record's "sfGuardGroupPermission" collection
+ * @method Doctrine_Collection get()                       Returns the current record's "sfGuardUserGroup" collection
+ * @method sfGuardGroup        set()                       Sets the current record's "name" value
+ * @method sfGuardGroup        set()                       Sets the current record's "description" value
+ * @method sfGuardGroup        set()                       Sets the current record's "Users" collection
+ * @method sfGuardGroup        set()                       Sets the current record's "Permissions" collection
+ * @method sfGuardGroup        set()                       Sets the current record's "sfGuardGroupPermission" collection
+ * @method sfGuardGroup        set()                       Sets the current record's "sfGuardUserGroup" collection
  * 
  * @package    PhpProject1
  * @subpackage model

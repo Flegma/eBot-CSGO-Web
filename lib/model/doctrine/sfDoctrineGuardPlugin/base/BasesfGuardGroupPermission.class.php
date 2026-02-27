@@ -10,14 +10,14 @@
  * @property sfGuardGroup $Group
  * @property sfGuardPermission $Permission
  * 
- * @method integer                getGroupId()       Returns the current record's "group_id" value
- * @method integer                getPermissionId()  Returns the current record's "permission_id" value
- * @method sfGuardGroup           getGroup()         Returns the current record's "Group" value
- * @method sfGuardPermission      getPermission()    Returns the current record's "Permission" value
- * @method sfGuardGroupPermission setGroupId()       Sets the current record's "group_id" value
- * @method sfGuardGroupPermission setPermissionId()  Sets the current record's "permission_id" value
- * @method sfGuardGroupPermission setGroup()         Sets the current record's "Group" value
- * @method sfGuardGroupPermission setPermission()    Sets the current record's "Permission" value
+ * @method integer                get()              Returns the current record's "group_id" value
+ * @method integer                get()              Returns the current record's "permission_id" value
+ * @method sfGuardGroup           get()              Returns the current record's "Group" value
+ * @method sfGuardPermission      get()              Returns the current record's "Permission" value
+ * @method sfGuardGroupPermission set()              Sets the current record's "group_id" value
+ * @method sfGuardGroupPermission set()              Sets the current record's "permission_id" value
+ * @method sfGuardGroupPermission set()              Sets the current record's "Group" value
+ * @method sfGuardGroupPermission set()              Sets the current record's "Permission" value
  * 
  * @package    PhpProject1
  * @subpackage model

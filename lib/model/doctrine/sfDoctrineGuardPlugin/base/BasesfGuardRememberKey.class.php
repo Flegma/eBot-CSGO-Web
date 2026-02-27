@@ -10,14 +10,14 @@
  * @property string $ip_address
  * @property sfGuardUser $User
  * 
- * @method integer            getUserId()       Returns the current record's "user_id" value
- * @method string             getRememberKey()  Returns the current record's "remember_key" value
- * @method string             getIpAddress()    Returns the current record's "ip_address" value
- * @method sfGuardUser        getUser()         Returns the current record's "User" value
- * @method sfGuardRememberKey setUserId()       Sets the current record's "user_id" value
- * @method sfGuardRememberKey setRememberKey()  Sets the current record's "remember_key" value
- * @method sfGuardRememberKey setIpAddress()    Sets the current record's "ip_address" value
- * @method sfGuardRememberKey setUser()         Sets the current record's "User" value
+ * @method integer            get()             Returns the current record's "user_id" value
+ * @method string             get()             Returns the current record's "remember_key" value
+ * @method string             get()             Returns the current record's "ip_address" value
+ * @method sfGuardUser        get()             Returns the current record's "User" value
+ * @method sfGuardRememberKey set()             Sets the current record's "user_id" value
+ * @method sfGuardRememberKey set()             Sets the current record's "remember_key" value
+ * @method sfGuardRememberKey set()             Sets the current record's "ip_address" value
+ * @method sfGuardRememberKey set()             Sets the current record's "User" value
  * 
  * @package    PhpProject1
  * @subpackage model

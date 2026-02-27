@@ -17,28 +17,28 @@
  * @property Maps $Map
  * @property PlayerKill $Kill
  * 
- * @method integer    getId()         Returns the current record's "id" value
- * @method integer    getMatchId()    Returns the current record's "match_id" value
- * @method integer    getMapId()      Returns the current record's "map_id" value
- * @method varchar    getEventName()  Returns the current record's "event_name" value
- * @method text       getEventText()  Returns the current record's "event_text" value
- * @method integer    getEventTime()  Returns the current record's "event_time" value
- * @method integer    getKillId()     Returns the current record's "kill_id" value
- * @method integer    getRoundId()    Returns the current record's "round_id" value
- * @method Matchs     getMatch()      Returns the current record's "Match" value
- * @method Maps       getMap()        Returns the current record's "Map" value
- * @method PlayerKill getKill()       Returns the current record's "Kill" value
- * @method Round      setId()         Sets the current record's "id" value
- * @method Round      setMatchId()    Sets the current record's "match_id" value
- * @method Round      setMapId()      Sets the current record's "map_id" value
- * @method Round      setEventName()  Sets the current record's "event_name" value
- * @method Round      setEventText()  Sets the current record's "event_text" value
- * @method Round      setEventTime()  Sets the current record's "event_time" value
- * @method Round      setKillId()     Sets the current record's "kill_id" value
- * @method Round      setRoundId()    Sets the current record's "round_id" value
- * @method Round      setMatch()      Sets the current record's "Match" value
- * @method Round      setMap()        Sets the current record's "Map" value
- * @method Round      setKill()       Sets the current record's "Kill" value
+ * @method integer    get()           Returns the current record's "id" value
+ * @method integer    get()           Returns the current record's "match_id" value
+ * @method integer    get()           Returns the current record's "map_id" value
+ * @method varchar    get()           Returns the current record's "event_name" value
+ * @method text       get()           Returns the current record's "event_text" value
+ * @method integer    get()           Returns the current record's "event_time" value
+ * @method integer    get()           Returns the current record's "kill_id" value
+ * @method integer    get()           Returns the current record's "round_id" value
+ * @method Matchs     get()           Returns the current record's "Match" value
+ * @method Maps       get()           Returns the current record's "Map" value
+ * @method PlayerKill get()           Returns the current record's "Kill" value
+ * @method Round      set()           Sets the current record's "id" value
+ * @method Round      set()           Sets the current record's "match_id" value
+ * @method Round      set()           Sets the current record's "map_id" value
+ * @method Round      set()           Sets the current record's "event_name" value
+ * @method Round      set()           Sets the current record's "event_text" value
+ * @method Round      set()           Sets the current record's "event_time" value
+ * @method Round      set()           Sets the current record's "kill_id" value
+ * @method Round      set()           Sets the current record's "round_id" value
+ * @method Round      set()           Sets the current record's "Match" value
+ * @method Round      set()           Sets the current record's "Map" value
+ * @method Round      set()           Sets the current record's "Kill" value
  * 
  * @package    PhpProject1
  * @subpackage model

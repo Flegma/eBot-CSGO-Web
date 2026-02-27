@@ -12,21 +12,24 @@
  * @property varchar $link
  * @property Doctrine_Collection $Matchs
  * @property Doctrine_Collection $TeamsInSeasons
+ * @property Doctrine_Collection $TeamPlayers
  * 
- * @method integer             getId()             Returns the current record's "id" value
- * @method varchar             getName()           Returns the current record's "name" value
- * @method varchar             getShorthandle()    Returns the current record's "shorthandle" value
- * @method varchar             getFlag()           Returns the current record's "flag" value
- * @method varchar             getLink()           Returns the current record's "link" value
- * @method Doctrine_Collection getMatchs()         Returns the current record's "Matchs" collection
- * @method Doctrine_Collection getTeamsInSeasons() Returns the current record's "TeamsInSeasons" collection
- * @method Teams               setId()             Sets the current record's "id" value
- * @method Teams               setName()           Sets the current record's "name" value
- * @method Teams               setShorthandle()    Sets the current record's "shorthandle" value
- * @method Teams               setFlag()           Sets the current record's "flag" value
- * @method Teams               setLink()           Sets the current record's "link" value
- * @method Teams               setMatchs()         Sets the current record's "Matchs" collection
- * @method Teams               setTeamsInSeasons() Sets the current record's "TeamsInSeasons" collection
+ * @method integer             get()               Returns the current record's "id" value
+ * @method varchar             get()               Returns the current record's "name" value
+ * @method varchar             get()               Returns the current record's "shorthandle" value
+ * @method varchar             get()               Returns the current record's "flag" value
+ * @method varchar             get()               Returns the current record's "link" value
+ * @method Doctrine_Collection get()               Returns the current record's "Matchs" collection
+ * @method Doctrine_Collection get()               Returns the current record's "TeamsInSeasons" collection
+ * @method Doctrine_Collection get()               Returns the current record's "TeamPlayers" collection
+ * @method Teams               set()               Sets the current record's "id" value
+ * @method Teams               set()               Sets the current record's "name" value
+ * @method Teams               set()               Sets the current record's "shorthandle" value
+ * @method Teams               set()               Sets the current record's "flag" value
+ * @method Teams               set()               Sets the current record's "link" value
+ * @method Teams               set()               Sets the current record's "Matchs" collection
+ * @method Teams               set()               Sets the current record's "TeamsInSeasons" collection
+ * @method Teams               set()               Sets the current record's "TeamPlayers" collection
  * 
  * @package    PhpProject1
  * @subpackage model
@@ -73,6 +76,10 @@ abstract class BaseTeams extends sfDoctrineRecord
              'foreign' => 'team_a'));
 
         $this->hasMany('TeamsInSeasons', array(
+             'local' => 'id',
+             'foreign' => 'team_id'));
+
+        $this->hasMany('TeamPlayers', array(
              'local' => 'id',
              'foreign' => 'team_id'));
 

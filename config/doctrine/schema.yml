@@ -297,3 +297,14 @@ TeamsInSeasons:
   relations:
     Seasons: { class: Seasons, onDelete: CASCADE, local: season_id, foreign: id }
     Teams: { class: Teams, onDelete: CASCADE, local: team_id, foreign: id }
+
+TeamPlayers:
+  actAs:
+    Timestampable: ~
+  columns:
+    id: { primary: true, type: integer(20), autoincrement: true }
+    team_id: { type: integer(20), notnull: true }
+    steamid64: { type: varchar(20), notnull: true }
+    name: { type: varchar(50), notnull: true }
+  relations:
+    Teams: { class: Teams, onDelete: CASCADE, local: team_id, foreign: id }

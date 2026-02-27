@@ -55,7 +55,9 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
     parent::setup();
   }
 
-  public function addGroupsListColumnQuery(Doctrine_Query $query, $field, $values)
+  public function add
+Warning: preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead in /app/eBot-CSGO-Web/lib/vendor/symfony/lib/util/sfToolkit.class.php on line 362
+ListColumnQuery(Doctrine_Query $query, $field, $values)
   {
     if (!is_array($values))
     {
@@ -73,7 +75,9 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
     ;
   }
 
-  public function addPermissionsListColumnQuery(Doctrine_Query $query, $field, $values)
+  public function add
+Warning: preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead in /app/eBot-CSGO-Web/lib/vendor/symfony/lib/util/sfToolkit.class.php on line 362
+ListColumnQuery(Doctrine_Query $query, $field, $values)
   {
     if (!is_array($values))
     {

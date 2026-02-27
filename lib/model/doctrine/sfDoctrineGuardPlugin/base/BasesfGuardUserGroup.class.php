@@ -10,14 +10,14 @@
  * @property sfGuardUser $User
  * @property sfGuardGroup $Group
  * 
- * @method integer          getUserId()   Returns the current record's "user_id" value
- * @method integer          getGroupId()  Returns the current record's "group_id" value
- * @method sfGuardUser      getUser()     Returns the current record's "User" value
- * @method sfGuardGroup     getGroup()    Returns the current record's "Group" value
- * @method sfGuardUserGroup setUserId()   Sets the current record's "user_id" value
- * @method sfGuardUserGroup setGroupId()  Sets the current record's "group_id" value
- * @method sfGuardUserGroup setUser()     Sets the current record's "User" value
- * @method sfGuardUserGroup setGroup()    Sets the current record's "Group" value
+ * @method integer          get()         Returns the current record's "user_id" value
+ * @method integer          get()         Returns the current record's "group_id" value
+ * @method sfGuardUser      get()         Returns the current record's "User" value
+ * @method sfGuardGroup     get()         Returns the current record's "Group" value
+ * @method sfGuardUserGroup set()         Sets the current record's "user_id" value
+ * @method sfGuardUserGroup set()         Sets the current record's "group_id" value
+ * @method sfGuardUserGroup set()         Sets the current record's "User" value
+ * @method sfGuardUserGroup set()         Sets the current record's "Group" value
  * 
  * @package    PhpProject1
  * @subpackage model
