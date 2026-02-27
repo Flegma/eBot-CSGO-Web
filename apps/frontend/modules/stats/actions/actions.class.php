@@ -101,7 +101,7 @@ class statsActions extends sfActions {
             $weapons[$v["weapon"]]["hs"] = $v["nb"];
         }
 
-        $query = "SELECT `weapon`, count(*) as nb, p.steamid as steamid, p.pseudo as pseudo FROM player_kill pk LEFT JOIN players p ON p.id = pk.killer_id GROUP BY `steamid`, `weapon` ORDER BY `weapon`,`nb` DESC";
+        $query = "SELECT `weapon`, count(*) as nb, p.steamid as steamid, p.pseudo as pseudo FROM player_kill pk LEFT JOIN players p ON p.id = pk.killer_id GROUP BY p.steamid, `weapon`, p.pseudo ORDER BY `weapon`,`nb` DESC";
         $rs = Doctrine_Manager::getInstance()->getCurrentConnection()->fetchAssoc($query);
         foreach ($rs as $v) {
             $weaponsTOP[$v["weapon"]][$v["steamid"]]["nb"] = $v["nb"];
